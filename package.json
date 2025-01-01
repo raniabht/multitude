@@ -4,15 +4,24 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "gsap": "^3.12.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^4.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tw": "npx tailwindcss -i ./src/App.css -o ./src/index.css --watch"
   },
   "eslintConfig": {
     "extends": [
