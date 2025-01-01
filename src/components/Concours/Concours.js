@@ -5,18 +5,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 
-import Header from './components/header';
+import Header from '../Util/header';
+import Nav from '../Util/Nav';
+import Footer from '../Util/Footer';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 
-function Tst() {
+function Concours() {
   return (
     <>
     <Header />
+    <Nav />
+
+    <Footer />
 <p>concours</p>
     </>
   );
 }
 
-export default Tst;
+export default Concours;

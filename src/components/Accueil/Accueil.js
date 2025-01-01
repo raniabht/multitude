@@ -4,25 +4,27 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-import Nav from './Accueil/Nav';
-import Info from './Accueil/info';
-import Collage from './Accueil/Collage';
-import reportWebVitals from './reportWebVitals';
-import Header from './Accueil/header';
+import Nav from '../Util/Nav';
+import Info from './info';
+import Collage from './Collage';
+import Header from '../Util/header';
+import Footer from '../Util/Footer';
+import Art from './Art';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 
-function Tst() {
+function Accueil() {
   return (
     <>
     <Header />
     <Nav />
     <Collage />
     <Info />
-
+    <Art />
+    <Footer />
     </>
   );
 }
 
-export default Tst;
+export default Accueil;

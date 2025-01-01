@@ -1,25 +1,19 @@
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
-
-
-function Info() {
-  return (
-    <section className="relative  md:mt-40">
-      <div className="absolute mul -top-96 md:relative">
+<!-- info -->
+<section className="relative  sm:mt-40">
+      <div className="absolute mul -top-96 sm:static">
       {/* titre et info inportent */}
       <div className="w-full p-5 border-2 border-black bg-white flex justify-center items-center sm:w-9/12">
-        <h1 className="text-6xl md:text-7xl">MULTITUDE</h1>
+        <h1 className="text-6xl sm:text-7xl">MULTITUDE</h1>
       </div>
-      <div className="w-full md:flex items-center">
-        <div className="border-2 border-black bg-white p-5 w-4/6 md:w-1/2">
+      <div className="w-full sm:flex items-center">
+        <div className="border-2 border-black bg-white p-5 w-4/6 sm:w-1/2">
         <p className="text-xl text-center">Adresse</p>
         <p className="text-lg text-center">Quai du Hainaut 41, 1080 Molenbeek-Saint-Jean</p>
       </div>
 
-      <div className="flex justify-end md:justify-start">
-      <div className="p-5 border-2 border-black bg-white w-4/6 md:w-1/2">
+      <div className="flex justify-end sm:justify-start">
+      <div className="border-2 border-black bg-white p-5 w-4/6 sm:w-1/2">
         <p className="text-xl text-center">periode</p>
         <p className="text-lg text-center">Jun 28, 2024 - Jan 05, 2025</p>
       </div>
@@ -27,10 +21,10 @@ function Info() {
       
       </div>
 
-      <div className="w-full md:w-9/12">
+      <div className="w-full sm:w-9/12">
       {/* txt info */}
       <div className="p-5 w-full border-2 border-black">
-        <p className="leading-8 md:leading-10">
+        <p className="leading-8 sm:leading-10">
             MULTITUDE est une exposition d’Alexandre Farto alias Vhils. Elle traite de 
             notre relation avec la ville, “la plus grande invention humaine” selon 
             l’historien Ben Wilson.
@@ -52,11 +46,11 @@ function Info() {
 
         {/* btn */}
       <div className="w-full flex flex-row justify-end ">
-          <div className="p-5 border-2 border-black w-1/2 md:w-1/3 flex justify-center items-center">
+          <div className="p-5 border-2 border-black w-1/2 sm:w-1/3 flex justify-center items-center">
             <p className="text-red-700 text-2xl">la galerie</p>
           </div>
 
-          <div className="p-5 border-2 border-black w-1/2 md:w-1/3 flex justify-center items-center">
+          <div className="p-5 border-2 border-black w-1/2 sm:w-1/3 flex justify-center items-center">
             <p className="text-red-700 text-2xl">jeu concours</p>
           </div>
         </div> 
@@ -65,7 +59,5 @@ function Info() {
       </div>
       </div>
     </section>
-  );
-}
 
-export default Info;
+    <!-- /info -->
