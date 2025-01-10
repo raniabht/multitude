@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Edu+QLD+Beginner:wght@400..700&display=swap');
+    
+
+.grid-item {
+    position: static !important; /* Remplace la position par défaut ajoutée par Isotope */
+    transform: none !important; /* Supprime les transformations ajoutées */
+    opacity: 1 !important;
+    height: 15rem; /* Assurez-vous que vos éléments ne sont pas masqués */
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 1rem;
+  }
+  
+  .grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    height: 200px;
+  }
+  
+
+.grid-item {
+    @apply bg-slate-500 border-2 border-black h-60 md:h-auto;
+}
+
 .header{
     height: 20vh;
 }
@@ -15,11 +43,11 @@
 }
 
 .jsp{
-    width: 15%;
+    width: 20%;
 }
 
 .titre{
-    width: 75%;
+    width: 60%;
 }
 
 .art{
@@ -36,4 +64,17 @@
 
 .marge {
     margin-top: 1000px;
+}
+
+
+.activea nav ul .accueil{
+    @apply bg-rouge font-semibold
+}
+
+.activeg nav ul .galerie{
+    @apply bg-rouge font-semibold
+}
+
+.activec nav ul .concours{
+    @apply bg-rouge font-semibold
 }

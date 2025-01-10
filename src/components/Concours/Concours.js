@@ -1,25 +1,26 @@
 import React from 'react';
-import { useEffect, useRef } from 'react';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-
+import Bannier from '../Util/Bannier';
 import Header from '../Util/header';
+
 import Nav from '../Util/Nav';
 import Footer from '../Util/Footer';
+import Form from './Form'
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+
 
 
 function Concours() {
   return (
     <>
+    <Bannier />
     <Header />
-    <Nav />
+    <div className='activec'>
+    <Nav /></div>
+    <Form />
 
     <Footer />
-<p>concours</p>
+
     </>
   );
 }

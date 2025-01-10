@@ -1,16 +1,16 @@
 import React from "react";
+import Header from "./header";
+import Nav from "./Nav";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-
-// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 
 function Error() {
   return (
     < >
-    <div className="w-full flex justify-center">
-        <h1>Error 404</h1>
+    <Header />
+    <Nav />
+    <div className="h-ful bg-bg w-full flex justify-center">
+        <h1 className="text-9xl font-edu">Error 404</h1>
     </div>
     </>
   );

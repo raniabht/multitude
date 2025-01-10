@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Ajouter la classe 'bg-bg' à la div avec l'ID 'root'
+const rootElement = document.getElementById('root');
+rootElement.classList.add('bg-bg');
+
+const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <App />

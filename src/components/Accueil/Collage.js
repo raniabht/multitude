@@ -1,14 +1,12 @@
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import React from "react";
 
-// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
-
+import Image1 from '../../img/multitude.png';
 
 function Collage() {
   return (
     <section className="border-2 border-black">
-      <div className="h-screen md: collage w-full bg-yellow-400">
-<p>ppor,jngfi</p>
+      <div className="h-screen md: collage w-full">
+      <img className="w-full h-full object-cover object-top" src={Image1} alt=""/>
       </div>
     </section>
   );
